@@ -36,3 +36,23 @@ TDD = Test Driven Developpement
 Depuis dossier de solution: `dotnet sln add .\Isen.DotNet.Tests\Isen.DotNet.Tests.csproj `
 
 Depuis dossier de Tests: `dotnet add reference .\Isen.DotNet.Library\Isen.DotNet.Library.csproj `
+
+## Push du projet sur un repo remote
+Créer un projet sur le serveur Git de votre Choix (GitHub,GitLab,...)
+`git remote add origin https://github.com/FlorianMunini/TestDotNet.git`
+`git push -u origin master`
+
+## Ajout d'un tag git 
+Creer le tag dans le repo local
+`git tag v0.1`
+Pusher le tag dans le remote repo
+`git push origin v0.1 `
+
+##Ajout d'un modèle
+Dans le projet library : 
+* Creer un dossier Models/Implementation
+* * Creer une classe Person :
+    * Id (int)
+    * Name (string)
+    * FirstName (string)
+    * BirthDate (DateTime)
